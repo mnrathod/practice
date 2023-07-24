@@ -1,5 +1,5 @@
 plugins {
-	apply plugin:'base'
+	id "base"
 	id 'java'
 	id 'org.springframework.boot' version '3.2.0-SNAPSHOT'
 	id 'io.spring.dependency-management' version '1.1.2'
