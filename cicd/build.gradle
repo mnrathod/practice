@@ -1,4 +1,5 @@
 plugins {
+	apply plugin:'base'
 	id 'java'
 	id 'org.springframework.boot' version '3.2.0-SNAPSHOT'
 	id 'io.spring.dependency-management' version '1.1.2'
@@ -40,8 +41,9 @@ dependencies {
 sonarqube {
     properties {
         property 'sonar.host.url', 'http://localhost:9000/'
-        property "sonar.login", "sonar"
-        property "sonar.password", "sonar"
+        //property "sonar.login", "sonar"
+        //property "sonar.password", "sonar"
         property "sonar.projectKey", "project:cicd"
+        property "sonar.token", "sqp_b5bf4ef880c440c824b665ec07516bbfa838a8b9"
     }
 }
